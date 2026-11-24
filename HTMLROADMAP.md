@@ -126,3 +126,20 @@ Frontend development involves building the parts of a website or web application
 2. `class`
 3. `style`
 4. `data-*` (data attributes)
+
+### Table Tags
+
+1. `table` (creates the table)
+   - `caption` (title of the table)
+   - `thead` (groups the header rows)
+   - `tbody` (groups the main body rows)
+   - `tfoot` (groups the footer rows, e.g. totals)
+   - `tr` (table row)
+     - `th` (header cell)
+     - `td` (data cell)
+   - `colgroup` (groups columns for styling)
+     - `col` (a single column inside `colgroup`)
+2. Table cell attributes
+   - `colspan` (makes a cell span several columns)
+   - `rowspan` (makes a cell span several rows)
+   - `scope` (tells screen readers whether a `th` heads a row or a column)
