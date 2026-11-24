@@ -175,6 +175,18 @@ Frontend development involves building the parts of a website or web application
 6. `picture` (shows different images for different screen sizes)
    - `source`
    - `img`
+7. Content Security Policy (CSP) for media
+   - What CSP is (a security rule that controls which sites your page may load content from)
+   - Setting CSP with `<meta http-equiv="Content-Security-Policy" content="...">` or an HTTP header
+   - `img-src` (allowed sources for images)
+   - `media-src` (allowed sources for `audio` and `video`)
+   - `frame-src` (allowed sources for `iframe`)
+   - `object-src 'none'` (blocks old plugins such as Flash)
+   - Example: `<meta http-equiv="Content-Security-Policy" content="img-src 'self' https://images.example.com; frame-src https://www.youtube.com">`
+8. Safe `iframe` attributes
+   - `sandbox` (limits what the embedded page can do)
+   - `allow` (grants specific features, e.g. `fullscreen`)
+   - `referrerpolicy` (controls what information is sent to the embedded site)
 
 ### Using Forms
 
@@ -195,3 +207,60 @@ Frontend development involves building the parts of a website or web application
 8. `datalist` (suggestions shown while typing in an `input`)
 9. Validation attributes
    - `required`, `minlength`, `maxlength`, `min`, `max`, `pattern`
+
+### Semantic Markup
+
+1. What semantic HTML is (tags that describe the meaning of the content, not just how it looks)
+2. Why it matters
+   - Accessibility (screen readers understand the page structure)
+   - SEO (search engines understand the content better)
+   - Readable, easier-to-maintain code
+3. Page layout tags
+   - `header` (top of the page or of a section: logo, title, intro)
+   - `nav` (main navigation links)
+   - `main` (the main content; only one per page)
+   - `section` (a themed group of content, usually with a heading)
+   - `article` (self-contained content, e.g. a blog post or news story)
+   - `aside` (side content, e.g. a sidebar or related links)
+   - `footer` (bottom of the page or of a section: copyright, contact)
+4. Text-level semantic tags
+   - `strong` vs `b`, `em` vs `i`
+   - `time` (dates and times, with a `datetime` attribute)
+   - `address` (contact information)
+   - `abbr` (abbreviations, with a `title` attribute)
+   - `blockquote` and `q` (long and short quotations)
+   - `cite` (title of a creative work)
+   - `code` (a piece of computer code)
+   - `figure` and `figcaption` (media with a caption)
+   - `details` and `summary` (content that can be shown or hidden)
+5. Semantic vs non-semantic tags (`div`/`span` vs `section`/`article`)
+6. Correct heading order (one `h1`, then `h2`, `h3` without skipping levels)
+7. Example layout
+
+```html
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Learning HTML</h2>
+      <p>Published on <time datetime="2026-11-24">24 November 2026</time></p>
+      <p>Semantic HTML makes pages easier to understand.</p>
+    </article>
+
+    <aside>
+      <h2>Related posts</h2>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Blog</p>
+  </footer>
+</body>
+```
