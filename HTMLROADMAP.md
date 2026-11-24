@@ -76,20 +76,20 @@ Frontend development involves building the parts of a website or web application
 
 ### How the web works
 
-1.What is HTTP?
-2.Domain names
-3.Hosting
-5.DNS
-6.Browsers
-7.What is SEO
+1. What is HTTP?
+2. Domain names
+3. Hosting
+5. DNS
+6. Browsers
+7. What is SEO
 
 ### Your first HTML file
 
-1.Tags and Attributes
-2.Case Insensitivity
-3.HTML Entities
+1. Tags and Attributes
+2. Case Insensitivity
+3. HTML Entities
 4. HTML Comments
-5.Whitespaces
+5. Whitespaces
 
 ### Basic Tags
 
