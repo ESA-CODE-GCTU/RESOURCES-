@@ -93,9 +93,36 @@ Frontend development involves building the parts of a website or web application
 
 ### Basic Tags
 
-1.!DOCTYPE
-2.html
-3.body
-4.head
-5.meta
+1. !DOCTYPE
+2. html
+3. body
+4. head
+5. meta
 
+### Textual Tags
+
+h1 to h6
+title
+p
+hr
+br
+b/strong
+pre
+i/em
+mark
+sub
+sup
+links
+
+### Grouping text
+
+div
+span
+section
+
+### Standard Attributes
+
+id
+class
+Data attributes
+style
