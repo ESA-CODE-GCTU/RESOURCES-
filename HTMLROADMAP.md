@@ -143,3 +143,55 @@ Frontend development involves building the parts of a website or web application
    - `colspan` (makes a cell span several columns)
    - `rowspan` (makes a cell span several rows)
    - `scope` (tells screen readers whether a `th` heads a row or a column)
+
+### Lists and Types
+
+1. `ul` (unordered list, shown with bullets)
+   - `li` (list item)
+2. `ol` (ordered list, shown with numbers or letters)
+   - `li` (list item)
+   - `type` attribute (`1`, `A`, `a`, `I`, `i`)
+   - `start` attribute (number to start counting from)
+   - `reversed` attribute (counts down instead of up)
+3. `dl` (description list, for terms and their definitions)
+   - `dt` (term)
+   - `dd` (description of the term)
+4. Nested lists (a list inside an `li`)
+
+### Embedding Media
+
+1. `img` (image)
+   - `src`, `alt`, `width`, `height`, `loading="lazy"`
+2. `figure` (groups media with a caption)
+   - `figcaption` (caption for the figure)
+3. `audio` (sound)
+   - `controls`, `autoplay`, `loop`, `muted`
+   - `source` (lets you offer several file formats)
+4. `video` (video)
+   - `controls`, `autoplay`, `loop`, `muted`, `poster`
+   - `source` (lets you offer several file formats)
+   - `track` (subtitles and captions)
+5. `iframe` (embeds another web page, e.g. a YouTube video or Google Map)
+6. `picture` (shows different images for different screen sizes)
+   - `source`
+   - `img`
+
+### Using Forms
+
+1. `form` (wraps all the form controls)
+   - `action` (where the data is sent)
+   - `method` (`get` or `post`)
+2. `label` (text that describes an input; linked with `for` and `id`)
+3. `input` (single-line input field)
+   - Types: `text`, `email`, `password`, `number`, `tel`, `url`, `date`, `checkbox`, `radio`, `file`, `range`, `color`, `hidden`, `submit`, `reset`
+   - Attributes: `name`, `value`, `placeholder`
+4. `textarea` (multi-line text input)
+5. `select` (dropdown list)
+   - `option` (one choice in the list)
+   - `optgroup` (groups related options)
+6. `button` (`type="submit"`, `type="reset"` or `type="button"`)
+7. `fieldset` (groups related fields)
+   - `legend` (title of the group)
+8. `datalist` (suggestions shown while typing in an `input`)
+9. Validation attributes
+   - `required`, `minlength`, `maxlength`, `min`, `max`, `pattern`
