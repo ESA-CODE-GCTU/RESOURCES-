@@ -98,31 +98,31 @@ Frontend development involves building the parts of a website or web application
 3. body
 4. head
 5. meta
+6. title
 
 ### Textual Tags
 
-h1 to h6
-title
-p
-hr
-br
-b/strong
-pre
-i/em
-mark
-sub
-sup
-links
+1. `h1` to `h6` (headings)
+2. `p` (paragraph)
+3. `hr` (horizontal rule)
+4. `br` (line break)
+5. `b` / `strong` (bold / strong importance)
+6. `i` / `em` (italic / emphasis)
+7. `pre` (preformatted text)
+8. `mark` (highlighted text)
+9. `sub` (subscript)
+10. `sup` (superscript)
+11. `a` (links)
 
-### Grouping text
+### Grouping Tags
 
-div
-span
-section
+1. `div` (block-level container)
+2. `span` (inline container)
+3. `section` (thematic section of a page)
 
 ### Standard Attributes
 
-id
-class
-Data attributes
-style
+1. `id`
+2. `class`
+3. `style`
+4. `data-*` (data attributes)
