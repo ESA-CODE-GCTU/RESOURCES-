@@ -205,8 +205,18 @@ Frontend development involves building the parts of a website or web application
 7. `fieldset` (groups related fields)
    - `legend` (title of the group)
 8. `datalist` (suggestions shown while typing in an `input`)
-9. Validation attributes
-   - `required`, `minlength`, `maxlength`, `min`, `max`, `pattern`
+9. Labels and Inputs (always pair each `input` with a `label` for accessibility)
+10. File Uploads
+    - `<input type="file">`, with `accept` (allowed file types) and `multiple`
+    - The form needs `method="post"` and `enctype="multipart/form-data"`
+11. Form Validation
+    - `required`, `minlength`, `maxlength`, `min`, `max`, `pattern`
+    - Built-in validation from input types (`email`, `url`, `number`)
+    - `novalidate` (turns off the browser's built-in validation)
+12. Limitations
+    - HTML validation can be bypassed, so data must always be checked again on the server
+    - HTML alone cannot process or store form data; it needs a backend
+    - Custom error messages and complex rules need JavaScript
 
 ### Semantic Markup
 
@@ -230,12 +240,17 @@ Frontend development involves building the parts of a website or web application
    - `abbr` (abbreviations, with a `title` attribute)
    - `blockquote` and `q` (long and short quotations)
    - `cite` (title of a creative work)
+   - `dfn` (the term being defined)
    - `code` (a piece of computer code)
    - `figure` and `figcaption` (media with a caption)
    - `details` and `summary` (content that can be shown or hidden)
-5. Semantic vs non-semantic tags (`div`/`span` vs `section`/`article`)
-6. Correct heading order (one `h1`, then `h2`, `h3` without skipping levels)
-7. Example layout
+5. Highlighting changes
+   - `del` (text that has been removed from the document)
+   - `ins` (text that has been added to the document)
+   - `s` (text that is no longer correct or relevant)
+6. Semantic vs non-semantic tags (`div`/`span` vs `section`/`article`)
+7. Correct heading order (one `h1`, then `h2`, `h3` without skipping levels)
+8. Example layout
 
 ```html
 <body>
@@ -264,3 +279,43 @@ Frontend development involves building the parts of a website or web application
   </footer>
 </body>
 ```
+
+### Styling Basics
+
+1. Inline CSS (the `style` attribute on an element)
+2. Internal CSS (a `<style>` tag inside `<head>`)
+3. External CSS (a separate `.css` file linked with `<link rel="stylesheet" href="styles.css">`)
+4. Which one to use (external CSS is preferred for real projects)
+
+### Including JavaScript
+
+1. Inline scripts (`<script>` with code inside it)
+2. External scripts (`<script src="app.js"></script>`)
+3. Where to place scripts (end of `body`, or in `head` with `defer`)
+4. `defer` vs `async`
+
+### Accessibility
+
+1. What web accessibility is (making pages usable by everyone, including people with disabilities)
+2. Meaningful `alt` text on images
+3. Using semantic tags and correct heading order
+4. Labels on all form inputs
+5. Keyboard navigation (every action works without a mouse)
+6. ARIA attributes (`aria-label`, `role`) when HTML alone is not enough
+7. Colour contrast and readable text
+
+### Basics of SEO
+
+1. What SEO is (Search Engine Optimisation)
+2. The `title` tag and `<meta name="description">`
+3. Using headings and semantic markup correctly
+4. Descriptive link text (not "click here")
+5. `alt` text on images
+6. Mobile-friendly pages (`<meta name="viewport">`)
+7. Fast-loading pages
+
+### Keep Learning
+
+- [Frontend Roadmap](https://roadmap.sh/frontend)
+- [CSS Roadmap](https://roadmap.sh/css)
+- [JavaScript Roadmap](https://roadmap.sh/javascript)
